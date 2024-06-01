@@ -1,0 +1,30 @@
+#
+# This docker-compose file starts and runs:
+# * A redis server
+# * A 1-node kafka cluster
+# * A 1-zookeeper ensemble
+# * Kafka Connect with Redis Source
+# * 3 Java Applications- Trucking-Simulation, Banking-Simulation, and STEDI
+# * A Spark master
+# * A Spark worker
+
+version: '3.7'
+
+services:
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+  postgres:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+
+
+
+
+
+
