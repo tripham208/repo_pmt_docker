@@ -1,13 +1,3 @@
-#
-# This docker-compose file starts and runs:
-# * A redis server
-# * A 1-node kafka cluster
-# * A 1-zookeeper ensemble
-# * Kafka Connect with Redis Source
-# * 3 Java Applications- Trucking-Simulation, Banking-Simulation, and STEDI
-# * A Spark master
-# * A Spark worker
-
 version: '3.7'
 
 services:
@@ -22,6 +12,7 @@ services:
     environment:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: admin
+      POSTGRES_DB: pmt
 
 
 

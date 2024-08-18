@@ -1,4 +1,4 @@
 # DATABASE
 
 1. PostgresQL
-2. 
+2. Redis 
